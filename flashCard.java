@@ -3,9 +3,15 @@
 public class flashCard extends cards{
 
   //TODO Created a parameterized constructor for entering values into the cards Data.
-  
-  flashCard()
+
+  flashCard(String Subject ,String Question , String Answer ) // Passing parameter of Subject , Question, Answer
   {
+    // get values from user for Subject
+    BufferedReader br=new BufferedReader(new inputStreamReader(System.in));
+
+    String Subject=br.readLine();
+    
+    Subject=this.Subject;
 
   }
 }
